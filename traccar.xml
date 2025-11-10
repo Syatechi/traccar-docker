@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE properties SYSTEM 'http://java.sun.com/dtd/properties.dtd'>
+<properties>
+    <entry key='web.enable'>false</entry>
+    <entry key='database.ignoreUnknownDevices'>true</entry>
+    <entry key='server.timeout'>180</entry>
+
+    <entry key='forward.enable'>true</entry>
+    <entry key='forward.url'>https://gpsserver-sei9.onrender.com/update-location</entry>
+    <entry key='forward.type'>json</entry>
+    
+    <entry key='forward.header'>X-API-KEY</entry>
+    <entry key='forward.header.X-API-KEY'>S&stem32.</entry> 
+</properties>
