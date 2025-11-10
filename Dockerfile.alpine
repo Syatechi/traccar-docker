@@ -13,6 +13,10 @@ RUN set -ex; \
     rm /tmp/traccar.zip; \
     apk del wget
 
+# 🚨 LÍNEA MODIFICADA: Copia tu archivo de configuración personalizado
+# Se asume que 'traccar.xml' está en la raíz de tu repositorio de GitHub.
+COPY traccar.xml /opt/traccar/conf/traccar.xml
+
 ENTRYPOINT ["java", "-Xms1g", "-Xmx1g", "-Djava.net.preferIPv4Stack=true"]
 
 CMD ["-jar", "tracker-server.jar", "conf/traccar.xml"]
